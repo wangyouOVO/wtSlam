@@ -1,4 +1,4 @@
-# Install script for directory: /home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified
+# Install script for directory: /home/wt/Projects/ORB_SLAM2_modified
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/wt/Projects/ORB_SLAM2_modified/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

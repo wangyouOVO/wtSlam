@@ -1,5 +1,6 @@
 build
-Examples/*
+
 lib/*
 Vocabulary/*
 CameraTrajectory.txt
+.vscode

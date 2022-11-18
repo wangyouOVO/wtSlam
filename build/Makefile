@@ -57,10 +57,10 @@ RM = /home/wt/Downloads/cmake/cmake-3.24.0-linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified
+CMAKE_SOURCE_DIR = /home/wt/Projects/ORB_SLAM2_modified
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/build
+CMAKE_BINARY_DIR = /home/wt/Projects/ORB_SLAM2_modified/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/build/CMakeFiles /home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wt/Projects/ORB_SLAM2_modified/build/CMakeFiles /home/wt/Projects/ORB_SLAM2_modified/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wt/Projects/ORB_SLAM2_modified/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,189 +130,41 @@ ORB_SLAM2/fast:
 .PHONY : ORB_SLAM2/fast
 
 #=============================================================================
-# Target rules for targets named rgbd_tum
+# Target rules for targets named kinectSLAM
 
 # Build rule for target.
-rgbd_tum: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rgbd_tum
-.PHONY : rgbd_tum
+kinectSLAM: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kinectSLAM
+.PHONY : kinectSLAM
 
 # fast build rule for target.
-rgbd_tum/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_tum.dir/build.make CMakeFiles/rgbd_tum.dir/build
-.PHONY : rgbd_tum/fast
+kinectSLAM/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinectSLAM.dir/build.make CMakeFiles/kinectSLAM.dir/build
+.PHONY : kinectSLAM/fast
 
-#=============================================================================
-# Target rules for targets named rgbd_my
-
-# Build rule for target.
-rgbd_my: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rgbd_my
-.PHONY : rgbd_my
-
-# fast build rule for target.
-rgbd_my/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_my.dir/build.make CMakeFiles/rgbd_my.dir/build
-.PHONY : rgbd_my/fast
-
-#=============================================================================
-# Target rules for targets named stereo_kitti
-
-# Build rule for target.
-stereo_kitti: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stereo_kitti
-.PHONY : stereo_kitti
-
-# fast build rule for target.
-stereo_kitti/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_kitti.dir/build.make CMakeFiles/stereo_kitti.dir/build
-.PHONY : stereo_kitti/fast
-
-#=============================================================================
-# Target rules for targets named mono_tum
-
-# Build rule for target.
-mono_tum: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mono_tum
-.PHONY : mono_tum
-
-# fast build rule for target.
-mono_tum/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono_tum.dir/build.make CMakeFiles/mono_tum.dir/build
-.PHONY : mono_tum/fast
-
-#=============================================================================
-# Target rules for targets named mono_kitti
-
-# Build rule for target.
-mono_kitti: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mono_kitti
-.PHONY : mono_kitti
-
-# fast build rule for target.
-mono_kitti/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono_kitti.dir/build.make CMakeFiles/mono_kitti.dir/build
-.PHONY : mono_kitti/fast
-
-Examples/Monocular/mono_kitti.o: Examples/Monocular/mono_kitti.cc.o
-.PHONY : Examples/Monocular/mono_kitti.o
+Examples/KinectAzure/KinectSlam.o: Examples/KinectAzure/KinectSlam.cc.o
+.PHONY : Examples/KinectAzure/KinectSlam.o
 
 # target to build an object file
-Examples/Monocular/mono_kitti.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono_kitti.dir/build.make CMakeFiles/mono_kitti.dir/Examples/Monocular/mono_kitti.cc.o
-.PHONY : Examples/Monocular/mono_kitti.cc.o
+Examples/KinectAzure/KinectSlam.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinectSLAM.dir/build.make CMakeFiles/kinectSLAM.dir/Examples/KinectAzure/KinectSlam.cc.o
+.PHONY : Examples/KinectAzure/KinectSlam.cc.o
 
-Examples/Monocular/mono_kitti.i: Examples/Monocular/mono_kitti.cc.i
-.PHONY : Examples/Monocular/mono_kitti.i
-
-# target to preprocess a source file
-Examples/Monocular/mono_kitti.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono_kitti.dir/build.make CMakeFiles/mono_kitti.dir/Examples/Monocular/mono_kitti.cc.i
-.PHONY : Examples/Monocular/mono_kitti.cc.i
-
-Examples/Monocular/mono_kitti.s: Examples/Monocular/mono_kitti.cc.s
-.PHONY : Examples/Monocular/mono_kitti.s
-
-# target to generate assembly for a file
-Examples/Monocular/mono_kitti.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono_kitti.dir/build.make CMakeFiles/mono_kitti.dir/Examples/Monocular/mono_kitti.cc.s
-.PHONY : Examples/Monocular/mono_kitti.cc.s
-
-Examples/Monocular/mono_tum.o: Examples/Monocular/mono_tum.cc.o
-.PHONY : Examples/Monocular/mono_tum.o
-
-# target to build an object file
-Examples/Monocular/mono_tum.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono_tum.dir/build.make CMakeFiles/mono_tum.dir/Examples/Monocular/mono_tum.cc.o
-.PHONY : Examples/Monocular/mono_tum.cc.o
-
-Examples/Monocular/mono_tum.i: Examples/Monocular/mono_tum.cc.i
-.PHONY : Examples/Monocular/mono_tum.i
+Examples/KinectAzure/KinectSlam.i: Examples/KinectAzure/KinectSlam.cc.i
+.PHONY : Examples/KinectAzure/KinectSlam.i
 
 # target to preprocess a source file
-Examples/Monocular/mono_tum.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono_tum.dir/build.make CMakeFiles/mono_tum.dir/Examples/Monocular/mono_tum.cc.i
-.PHONY : Examples/Monocular/mono_tum.cc.i
+Examples/KinectAzure/KinectSlam.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinectSLAM.dir/build.make CMakeFiles/kinectSLAM.dir/Examples/KinectAzure/KinectSlam.cc.i
+.PHONY : Examples/KinectAzure/KinectSlam.cc.i
 
-Examples/Monocular/mono_tum.s: Examples/Monocular/mono_tum.cc.s
-.PHONY : Examples/Monocular/mono_tum.s
-
-# target to generate assembly for a file
-Examples/Monocular/mono_tum.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono_tum.dir/build.make CMakeFiles/mono_tum.dir/Examples/Monocular/mono_tum.cc.s
-.PHONY : Examples/Monocular/mono_tum.cc.s
-
-Examples/RGB-D/rgbd_my.o: Examples/RGB-D/rgbd_my.cc.o
-.PHONY : Examples/RGB-D/rgbd_my.o
-
-# target to build an object file
-Examples/RGB-D/rgbd_my.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_my.dir/build.make CMakeFiles/rgbd_my.dir/Examples/RGB-D/rgbd_my.cc.o
-.PHONY : Examples/RGB-D/rgbd_my.cc.o
-
-Examples/RGB-D/rgbd_my.i: Examples/RGB-D/rgbd_my.cc.i
-.PHONY : Examples/RGB-D/rgbd_my.i
-
-# target to preprocess a source file
-Examples/RGB-D/rgbd_my.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_my.dir/build.make CMakeFiles/rgbd_my.dir/Examples/RGB-D/rgbd_my.cc.i
-.PHONY : Examples/RGB-D/rgbd_my.cc.i
-
-Examples/RGB-D/rgbd_my.s: Examples/RGB-D/rgbd_my.cc.s
-.PHONY : Examples/RGB-D/rgbd_my.s
+Examples/KinectAzure/KinectSlam.s: Examples/KinectAzure/KinectSlam.cc.s
+.PHONY : Examples/KinectAzure/KinectSlam.s
 
 # target to generate assembly for a file
-Examples/RGB-D/rgbd_my.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_my.dir/build.make CMakeFiles/rgbd_my.dir/Examples/RGB-D/rgbd_my.cc.s
-.PHONY : Examples/RGB-D/rgbd_my.cc.s
-
-Examples/RGB-D/rgbd_tum.o: Examples/RGB-D/rgbd_tum.cc.o
-.PHONY : Examples/RGB-D/rgbd_tum.o
-
-# target to build an object file
-Examples/RGB-D/rgbd_tum.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_tum.dir/build.make CMakeFiles/rgbd_tum.dir/Examples/RGB-D/rgbd_tum.cc.o
-.PHONY : Examples/RGB-D/rgbd_tum.cc.o
-
-Examples/RGB-D/rgbd_tum.i: Examples/RGB-D/rgbd_tum.cc.i
-.PHONY : Examples/RGB-D/rgbd_tum.i
-
-# target to preprocess a source file
-Examples/RGB-D/rgbd_tum.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_tum.dir/build.make CMakeFiles/rgbd_tum.dir/Examples/RGB-D/rgbd_tum.cc.i
-.PHONY : Examples/RGB-D/rgbd_tum.cc.i
-
-Examples/RGB-D/rgbd_tum.s: Examples/RGB-D/rgbd_tum.cc.s
-.PHONY : Examples/RGB-D/rgbd_tum.s
-
-# target to generate assembly for a file
-Examples/RGB-D/rgbd_tum.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_tum.dir/build.make CMakeFiles/rgbd_tum.dir/Examples/RGB-D/rgbd_tum.cc.s
-.PHONY : Examples/RGB-D/rgbd_tum.cc.s
-
-Examples/Stereo/stereo_kitti.o: Examples/Stereo/stereo_kitti.cc.o
-.PHONY : Examples/Stereo/stereo_kitti.o
-
-# target to build an object file
-Examples/Stereo/stereo_kitti.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_kitti.dir/build.make CMakeFiles/stereo_kitti.dir/Examples/Stereo/stereo_kitti.cc.o
-.PHONY : Examples/Stereo/stereo_kitti.cc.o
-
-Examples/Stereo/stereo_kitti.i: Examples/Stereo/stereo_kitti.cc.i
-.PHONY : Examples/Stereo/stereo_kitti.i
-
-# target to preprocess a source file
-Examples/Stereo/stereo_kitti.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_kitti.dir/build.make CMakeFiles/stereo_kitti.dir/Examples/Stereo/stereo_kitti.cc.i
-.PHONY : Examples/Stereo/stereo_kitti.cc.i
-
-Examples/Stereo/stereo_kitti.s: Examples/Stereo/stereo_kitti.cc.s
-.PHONY : Examples/Stereo/stereo_kitti.s
-
-# target to generate assembly for a file
-Examples/Stereo/stereo_kitti.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_kitti.dir/build.make CMakeFiles/stereo_kitti.dir/Examples/Stereo/stereo_kitti.cc.s
-.PHONY : Examples/Stereo/stereo_kitti.cc.s
+Examples/KinectAzure/KinectSlam.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinectSLAM.dir/build.make CMakeFiles/kinectSLAM.dir/Examples/KinectAzure/KinectSlam.cc.s
+.PHONY : Examples/KinectAzure/KinectSlam.cc.s
 
 src/Converter.o: src/Converter.cc.o
 .PHONY : src/Converter.o
@@ -803,26 +655,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ORB_SLAM2"
-	@echo "... mono_kitti"
-	@echo "... mono_tum"
-	@echo "... rgbd_my"
-	@echo "... rgbd_tum"
-	@echo "... stereo_kitti"
-	@echo "... Examples/Monocular/mono_kitti.o"
-	@echo "... Examples/Monocular/mono_kitti.i"
-	@echo "... Examples/Monocular/mono_kitti.s"
-	@echo "... Examples/Monocular/mono_tum.o"
-	@echo "... Examples/Monocular/mono_tum.i"
-	@echo "... Examples/Monocular/mono_tum.s"
-	@echo "... Examples/RGB-D/rgbd_my.o"
-	@echo "... Examples/RGB-D/rgbd_my.i"
-	@echo "... Examples/RGB-D/rgbd_my.s"
-	@echo "... Examples/RGB-D/rgbd_tum.o"
-	@echo "... Examples/RGB-D/rgbd_tum.i"
-	@echo "... Examples/RGB-D/rgbd_tum.s"
-	@echo "... Examples/Stereo/stereo_kitti.o"
-	@echo "... Examples/Stereo/stereo_kitti.i"
-	@echo "... Examples/Stereo/stereo_kitti.s"
+	@echo "... kinectSLAM"
+	@echo "... Examples/KinectAzure/KinectSlam.o"
+	@echo "... Examples/KinectAzure/KinectSlam.i"
+	@echo "... Examples/KinectAzure/KinectSlam.s"
 	@echo "... src/Converter.o"
 	@echo "... src/Converter.i"
 	@echo "... src/Converter.s"

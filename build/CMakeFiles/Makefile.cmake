@@ -108,12 +108,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/wt/Downloads/cmake/cmake-3.24.0-linux-x86_64/share/cmake-3.24/Modules/Platform/Linux-GNU.cmake"
   "/home/wt/Downloads/cmake/cmake-3.24.0-linux-x86_64/share/cmake-3.24/Modules/Platform/Linux.cmake"
   "/home/wt/Downloads/cmake/cmake-3.24.0-linux-x86_64/share/cmake-3.24/Modules/Platform/UnixPaths.cmake"
-  "/home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/CMakeLists.txt"
+  "/home/wt/Projects/ORB_SLAM2_modified/CMakeLists.txt"
   "CMakeFiles/3.24.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.24.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.24.0/CMakeSystem.cmake"
-  "/home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/cmake_modules/FindEigen3.cmake"
-  "/home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/cmake_modules/FindG2O.cmake"
+  "/home/wt/Projects/ORB_SLAM2_modified/cmake_modules/FindEigen3.cmake"
+  "/home/wt/Projects/ORB_SLAM2_modified/cmake_modules/FindG2O.cmake"
+  "/home/wt/Projects/ORB_SLAM2_modified/cmake_modules/Findk4a.cmake"
   "/usr/lib/cmake/vtk-7.1/Modules/vtkChartsCore.cmake"
   "/usr/lib/cmake/vtk-7.1/Modules/vtkCommonColor.cmake"
   "/usr/lib/cmake/vtk-7.1/Modules/vtkCommonComputationalGeometry.cmake"
@@ -213,9 +214,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ORB_SLAM2.dir/DependInfo.cmake"
-  "CMakeFiles/rgbd_tum.dir/DependInfo.cmake"
-  "CMakeFiles/rgbd_my.dir/DependInfo.cmake"
-  "CMakeFiles/stereo_kitti.dir/DependInfo.cmake"
-  "CMakeFiles/mono_tum.dir/DependInfo.cmake"
-  "CMakeFiles/mono_kitti.dir/DependInfo.cmake"
+  "CMakeFiles/kinectSLAM.dir/DependInfo.cmake"
   )
