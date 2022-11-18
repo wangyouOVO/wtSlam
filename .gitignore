@@ -1,2 +1,5 @@
 build
-videos
+Examples/*
+lib/*
+Vocabulary/*
+CameraTrajectory.txt

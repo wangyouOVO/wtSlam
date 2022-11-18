@@ -1,3 +1,8 @@
-/home/wt/Projects/wtSlam/build/CMakeFiles/DisplayImage.dir
-/home/wt/Projects/wtSlam/build/CMakeFiles/edit_cache.dir
-/home/wt/Projects/wtSlam/build/CMakeFiles/rebuild_cache.dir
+/home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/build/CMakeFiles/ORB_SLAM2.dir
+/home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/build/CMakeFiles/rgbd_tum.dir
+/home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/build/CMakeFiles/rgbd_my.dir
+/home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/build/CMakeFiles/stereo_kitti.dir
+/home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/build/CMakeFiles/mono_tum.dir
+/home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/build/CMakeFiles/mono_kitti.dir
+/home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/build/CMakeFiles/edit_cache.dir
+/home/wt/Projects/slam-book-master_GaoXiang/ORBSLAM2_with_pointcloud_map/orbslam2_modified/ORB_SLAM2_modified/build/CMakeFiles/rebuild_cache.dir
